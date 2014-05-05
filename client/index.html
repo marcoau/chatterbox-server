@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BBchat</title>
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- dependencies -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="lib/d3.min.js"></script>
+
+    <!-- your scripts -->
+    <!--
+    <script src="scripts/config.js"></script>
+    <script src="scripts/app.js"></script> -->
+  </head>
+  <body>
+    <div class='container' id="main-app">
+      
+      <!-- Your HTML goes here! -->
+      <div class='col-md-3' id="input">
+        <h1>BBChat</h1>
+        <div class='status'>
+          <div>You are now at <span id='currentRoom'></span></div>
+        </div>
+
+        <div id="rooms">
+          <h3>Select Room:</h3>
+          <input class='newRoom' placeholder='New Room'>
+          <div class='roomButtons'>
+            <button class="changeRoom">lobby</button>
+          </div>
+        </div>
+
+        <div id="friends">
+          <h3>Your friends:</h3>
+          <input class='newFriend' placeholder='New Friend'>
+          <div class='friendButtons'></div>
+        </div>
+      </div>
+
+      <div class='col-md-9' id='output'>
+        <input class='newText' placeholder='Enter message'>
+        <h3>Tweets:</h3>
+        <div class='chats'>
+        </div>
+      </div>
+    </div>
+    <script src='src/view.js'></script>
+    <script src='src/config.js'></script>
+  </body>
+</html>

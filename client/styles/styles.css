@@ -1,0 +1,21 @@
+body{
+  background-color: green;
+}
+.container{
+  background-color: white;
+}
+#input, #output{
+  height: 500px;
+}
+.roomButtons, .friendButtons{
+  width: 250px;
+  height: 100px;
+  background-color: gray;
+}
+.chats{
+  height: 400px;
+  overflow: scroll;
+}
+.friend{
+  font-weight: bold;
+}
